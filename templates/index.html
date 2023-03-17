@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Admission Predictor</title>
+</head>
+<body>
+
+    <h1>Student Admission Predictor</h1>
+   
+    <form method="POST" action="/predict">
+        <label>GRE_Score</label><br>
+        <input type="text" name="gre_score"><br><br>
+
+        <label>TOFEL_Score</label><br>
+        <input type="text" name="tofel_score"><br><br>
+
+        <label>CGPA</label><br>
+        <input type="text" name="cgpa"><br><br>
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+    <br>
+    <br>
+    <h1>{{chance_of_admit}}</h1>
+
+</body>
+</html>
